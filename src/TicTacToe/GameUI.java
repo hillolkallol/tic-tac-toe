@@ -1,4 +1,7 @@
+package TicTacToe;
 
+
+import TicTacToe.TicTacToe;
 import java.util.Scanner;
 
 /*
@@ -24,7 +27,8 @@ public class GameUI {
             int row = Integer.parseInt(arr[0]);
             int col = Integer.parseInt(arr[1]);
             
-            if (!game.validMove(row, col)) {
+            // checking if the move is valid, if not, giving the player another chance to make a correct move
+            if (!game.validMove(row, col)) { 
                 System.out.println("Not a valid move, try again!");
                 continue;
             }
