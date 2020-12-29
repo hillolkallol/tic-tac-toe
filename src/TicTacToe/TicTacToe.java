@@ -26,6 +26,7 @@ import java.util.List;
  * It is a solved game with a forced draw assuming best play from both players. 
  * Reference: Wikipedia- https://en.wikipedia.org/wiki/Tic-tac-toe
  * 
+ * **********************************************************
  * This game has two main characteristics- Move and Winner Check.
  * CheckWinner method will be called after each move.
  * 
@@ -35,8 +36,12 @@ import java.util.List;
  * Then the checkWinner method will be called.
  * Last thing we need to check is if the match is a draw!
  * 
- * 
- * 
+ * Next thing is to check if the player is the winner after the last move.
+ * Check-
+ * * if all the rows contain same sign OR
+ * * if all the columns contain same sign OR
+ * * if all diagonal or anti-diagonal boxes contain same sign
+ * ************************************************************
  * 
  * @author KD
  */
